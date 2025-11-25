@@ -63,7 +63,7 @@ void loop() {
 }
 
 void waterPlants(int duration){
-  digitalWrite(RELAY_PIN, HIGH);   // turn the RELAY on 
-  delay(duration);                     // wait for a second
-  digitalWrite(RELAY_PIN, LOW); 
+  digitalWrite(RELAY_PIN, HIGH);   // turn the relay on 
+  delay(duration);                     // open the valve for the time specified
+  digitalWrite(RELAY_PIN, LOW);   // Turn off the relay 
 }
